@@ -1,0 +1,2 @@
+CGROM.v,verilog,xil_defaultlib,../../../../../../chardisp_ip/src/CGROM/sim/CGROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

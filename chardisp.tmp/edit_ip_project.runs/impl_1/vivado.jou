@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 18 19:38:59 2019
+# Process ID: 29183
+# Current directory: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/impl_1
+# Command line: vivado -log chardisp_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source chardisp_v1_0.tcl -notrace
+# Log file: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/impl_1/chardisp_v1_0.vdi
+# Journal file: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source chardisp_v1_0.tcl -notrace

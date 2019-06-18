@@ -1,0 +1,12 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/akayashima/H31_Xilinx/chardisp/chardisp.sim/chardisp_sim/chardisp_sim.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp.sim/chardisp_sim/chardisp_sim.srcs/sim_1/new/tb_chardisp.v,1555556490,verilog,,,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/vga_param.vh,tb_chardisp,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v,1555555819,verilog,,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/vga_param.vh,chardisp,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v,1554892410,verilog,,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v,,pckgen,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/src/CGROM/sim/CGROM.v,1555573767,verilog,,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/src/VRAM/sim/VRAM.v,,CGROM,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/src/VRAM/sim/VRAM.v,1555555786,verilog,,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v,,VRAM,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v,1554892662,verilog,,/home/akayashima/H31_Xilinx/chardisp/chardisp.sim/chardisp_sim/chardisp_sim.srcs/sim_1/new/tb_chardisp.v,/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/vga_param.vh,syncgen,,,../../../../../../chardisp_ip,,,,,
+/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/vga_param.vh,1554890742,verilog,,,,,,,,,,,,

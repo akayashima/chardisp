@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../../../chardisp_ip" --include "../../../../../../chardisp_ip" \
+"../../../../../../chardisp_ip/src/CGROM/sim/CGROM.v" \
+"../../../../../../chardisp_ip/src/VRAM/sim/VRAM.v" \
+"../../../../../../chardisp_ip/chardisp.v" \
+"../../../../../../chardisp_ip/pckgen.v" \
+"../../../../../../chardisp_ip/syncgen.v" \
+"../../../../chardisp_sim.srcs/sim_1/new/tb_chardisp.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 18 17:00:45 2019
+# Process ID: 16128
+# Current directory: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/CGROM_synth_1
+# Command line: vivado -log CGROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CGROM.tcl
+# Log file: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/CGROM_synth_1/CGROM.vds
+# Journal file: /home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/CGROM_synth_1/vivado.jou
+#-----------------------------------------------------------
+source CGROM.tcl -notrace

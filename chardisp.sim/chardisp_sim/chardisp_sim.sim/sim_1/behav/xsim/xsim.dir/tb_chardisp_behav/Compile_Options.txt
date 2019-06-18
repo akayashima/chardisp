@@ -1,0 +1,1 @@
+-wto "c04a04d4c56a4f8c993d67d2afccd03d" --incr --debug "typical" --relax --mt "8" -L "blk_mem_gen_v8_4_1" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_chardisp_behav" "xil_defaultlib.tb_chardisp" "xil_defaultlib.glbl" -log "elaborate.log" 

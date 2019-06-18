@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="VRAM_synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1555555786">
+  <File Type="RDS-UTIL-PB" Name="VRAM_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="VRAM_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="VRAM.vds"/>
+  <File Type="RDS-DCP" Name="VRAM.dcp"/>
+  <File Type="PA-TCL" Name="VRAM.tcl"/>
+  <File Type="REPORTS-TCL" Name="VRAM_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VRAM">
+    <File Path="$PPRDIR/../../chardisp_ip/src/VRAM/VRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="VRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VRAM">
+    <File Path="$PPRDIR/../../chardisp_ip/src/VRAM/VRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="VRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

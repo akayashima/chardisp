@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/src/CGROM/sim/CGROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CGROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/src/VRAM/sim/VRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chardisp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pckgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syncgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/akayashima/H31_Xilinx/chardisp/chardisp.sim/chardisp_sim/chardisp_sim.srcs/sim_1/new/tb_chardisp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_chardisp
+INFO: [VRFC 10-2458] undeclared symbol WRADDDR, assumed default net type wire [/home/akayashima/H31_Xilinx/chardisp/chardisp.sim/chardisp_sim/chardisp_sim.srcs/sim_1/new/tb_chardisp.v:44]

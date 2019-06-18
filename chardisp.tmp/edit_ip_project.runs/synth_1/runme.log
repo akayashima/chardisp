@@ -1,0 +1,450 @@
+
+*** Running vivado
+    with args -log chardisp_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chardisp_v1_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source chardisp_v1_0.tcl -notrace
+Command: synth_design -top chardisp_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23095 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1388.953 ; gain = 86.957 ; free physical = 2737 ; free virtual = 15828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'chardisp_v1_0' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'chardisp_v1_0_S00_AXI' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'chardisp' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v:3]
+	Parameter HPERIOD bound to: 10'b1100100000 
+	Parameter HFRONT bound to: 10'b0000010000 
+	Parameter HWIDTH bound to: 10'b0001100000 
+	Parameter HBACK bound to: 10'b0000110000 
+	Parameter VPERIOD bound to: 10'b1000001101 
+	Parameter VFRONT bound to: 10'b0000001010 
+	Parameter VWIDTH bound to: 10'b0000000010 
+	Parameter VBACK bound to: 10'b0000100001 
+INFO: [Synth 8-638] synthesizing module 'syncgen' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v:1]
+	Parameter HPERIOD bound to: 10'b1100100000 
+	Parameter HFRONT bound to: 10'b0000010000 
+	Parameter HWIDTH bound to: 10'b0001100000 
+	Parameter HBACK bound to: 10'b0000110000 
+	Parameter VPERIOD bound to: 10'b1000001101 
+	Parameter VFRONT bound to: 10'b0000001010 
+	Parameter VWIDTH bound to: 10'b0000000010 
+	Parameter VBACK bound to: 10'b0000100001 
+INFO: [Synth 8-638] synthesizing module 'pckgen' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v:23]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [/home/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [/home/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 25.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 25.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (2#1) [/home/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+WARNING: [Synth 8-350] instance 'MMCM2_BASE_inst' of module 'MMCME2_BASE' requires 18 connections, but only 5 given [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v:40]
+INFO: [Synth 8-256] done synthesizing module 'pckgen' (3#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/pckgen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'syncgen' (4#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v:1]
+INFO: [Synth 8-638] synthesizing module 'VRAM' [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'VRAM' (5#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'CGROM' [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/realtime/CGROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CGROM' (6#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/realtime/CGROM_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'douta' does not match port width (8) of module 'CGROM' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v:73]
+INFO: [Synth 8-256] done synthesizing module 'chardisp' (7#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'WRADDR' does not match port width (16) of module 'chardisp' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0_S00_AXI.v:349]
+WARNING: [Synth 8-689] width (4) of port connection 'RDADDR' does not match port width (16) of module 'chardisp' [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0_S00_AXI.v:353]
+INFO: [Synth 8-256] done synthesizing module 'chardisp_v1_0_S00_AXI' (8#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'chardisp_v1_0' (9#1) [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/chardisp_v1_0.v:4]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRADDR[15]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRADDR[14]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRADDR[1]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRADDR[0]
+WARNING: [Synth 8-3331] design chardisp has unconnected port BYTEEN[3]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[31]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[30]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[29]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[28]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[27]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[26]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[25]
+WARNING: [Synth 8-3331] design chardisp has unconnected port WRDATA[24]
+WARNING: [Synth 8-3331] design chardisp has unconnected port RDADDR[15]
+WARNING: [Synth 8-3331] design chardisp has unconnected port RDADDR[14]
+WARNING: [Synth 8-3331] design chardisp has unconnected port RDADDR[1]
+WARNING: [Synth 8-3331] design chardisp has unconnected port RDADDR[0]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design chardisp_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1430.492 ; gain = 128.496 ; free physical = 2750 ; free virtual = 15841
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1430.492 ; gain = 128.496 ; free physical = 2750 ; free virtual = 15841
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/dcp2/CGROM_in_context.xdc] for cell 'chardisp_v1_0_S00_AXI_inst/chardisp/CGROM'
+Finished Parsing XDC File [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/dcp2/CGROM_in_context.xdc] for cell 'chardisp_v1_0_S00_AXI_inst/chardisp/CGROM'
+Parsing XDC File [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/dcp3/VRAM_in_context.xdc] for cell 'chardisp_v1_0_S00_AXI_inst/chardisp/VRAM'
+Finished Parsing XDC File [/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/.Xil/Vivado-15850-bluewater02/dcp3/VRAM_in_context.xdc] for cell 'chardisp_v1_0_S00_AXI_inst/chardisp/VRAM'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1813.535 ; gain = 0.000 ; free physical = 2466 ; free virtual = 15557
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2533 ; free virtual = 15624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2533 ; free virtual = 15624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for chardisp_v1_0_S00_AXI_inst/chardisp/CGROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for chardisp_v1_0_S00_AXI_inst/chardisp/VRAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2536 ; free virtual = 15627
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "VGA_HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA_VS" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element HCNT_reg was removed.  [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v:18]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2527 ; free virtual = 15618
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module syncgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module chardisp 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module chardisp_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "chardisp_v1_0_S00_AXI_inst/chardisp/syncgen/VGA_HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "chardisp_v1_0_S00_AXI_inst/chardisp/syncgen/VGA_VS" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element chardisp_v1_0_S00_AXI_inst/chardisp/syncgen/HCNT_reg was removed.  [/home/akayashima/H31_Xilinx/chardisp/chardisp_ip/syncgen.v:18]
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design chardisp_v1_0 has port s00_axi_rdata[24] driven by constant 0
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[31]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[30]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[29]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[28]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[27]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[26]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[25]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wdata[24]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design chardisp_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'chardisp_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'chardisp_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\chardisp_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'chardisp_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'chardisp_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\chardisp_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module chardisp_v1_0.
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module chardisp_v1_0.
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module chardisp_v1_0.
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module chardisp_v1_0.
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module chardisp_v1_0.
+WARNING: [Synth 8-3332] Sequential element (chardisp_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module chardisp_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2517 ; free virtual = 15608
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2392 ; free virtual = 15484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2392 ; free virtual = 15484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2390 ; free virtual = 15481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |VRAM          |         1|
+|2     |CGROM         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CGROM       |     1|
+|2     |VRAM        |     1|
+|3     |BUFG        |     2|
+|4     |CARRY4      |     3|
+|5     |LUT1        |     4|
+|6     |LUT2        |    12|
+|7     |LUT3        |     8|
+|8     |LUT4        |    14|
+|9     |LUT5        |    21|
+|10    |LUT6        |    39|
+|11    |MMCME2_BASE |     1|
+|12    |FDRE        |    61|
+|13    |FDSE        |     3|
+|14    |IBUF        |    38|
+|15    |OBUF        |    55|
++------+------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |   317|
+|2     |  chardisp_v1_0_S00_AXI_inst |chardisp_v1_0_S00_AXI |   223|
+|3     |    chardisp                 |chardisp              |   207|
+|4     |      syncgen                |syncgen               |   110|
+|5     |        pckgen               |pckgen                |     2|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2389 ; free virtual = 15480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1813.535 ; gain = 128.496 ; free physical = 2443 ; free virtual = 15534
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1813.535 ; gain = 511.539 ; free physical = 2443 ; free virtual = 15534
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:02:12 . Memory (MB): peak = 1821.543 ; gain = 544.410 ; free physical = 2434 ; free virtual = 15525
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H31_Xilinx/chardisp/chardisp.tmp/edit_ip_project.runs/synth_1/chardisp_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file chardisp_v1_0_utilization_synth.rpt -pb chardisp_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1845.559 ; gain = 0.000 ; free physical = 2434 ; free virtual = 15526
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 19:38:51 2019...
